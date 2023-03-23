@@ -11,10 +11,15 @@ h1 {
 
 p {
     font-size: 17px;
+    margin: 0px;
+}
+
+.episodios {
+    color: rgba( 225, 225, 225, 0.8);
 }
 
 .teste {
-    background: url(img/27115.jpg);
+    background: url(img/679710.png);
     background-attachment: fixed;
 }
 
@@ -23,25 +28,22 @@ body {
 }
 
 header {
-    position: sticky;
-    top: 0px;
     background: black;
     border-bottom: white solid 1px;
     display: grid;
-    grid-template-columns: 20% 80%;
-    position: sticky;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 img {
     width: 240px;
     height: auto;
+    border-radius: 5px;
 }
 
 #logo {
-    grid-column: 1;
     font-size: 30px;
-    margin: 15px;
-    margin-left: 200px;
+    padding: 15px;
+    text-align: center;
 }
 
 .logo_anime {
@@ -51,24 +53,48 @@ img {
 }
 
 .menu {
-    grid-column: 2;
     display: grid;
-    margin-left: 50px;
-    grid-template-columns: 100px 100px 100px 1200px 50px;
+    grid-column: 2;
+    grid-template-columns: repeat(4, 1fr);
     padding: 10px;
-    text-align: center;
     font-size: 15px;
 }
 
 #anime {
-    grid-column: 2;
+    padding: 10px;
+}
+
+#anime:hover {
+    background: rgb(42, 38, 38);
+    border-radius: 10px;
+}
+
+#manga {
+    padding: 10px;
+}
+
+#manga:hover {
+    background: rgb(42, 38, 38);
+    border-radius: 10px;
+}
+
+#genero {
+    padding: 10px;
+}
+
+#genero:hover {
+    background: rgb(42, 38, 38);
+    border-radius: 10px;
 }
 
 #login {
-    grid-column: 5;
     background: cyan;
     border-radius: 5px;
     padding: 10px;
+}
+
+#login:hover {
+    opacity: 0.8;
 }
 
 .conteiner {
@@ -77,12 +103,12 @@ img {
 }
 
 .bloco {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
     display: grid;
     grid-column: 2; 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 120px repeat(5, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 .melhores {
@@ -93,8 +119,14 @@ img {
 }
 
 .animes {
+    border: 1px whitesmoke solid;
+    border-radius: 10px;
     text-align: center;
     padding: 10px;
-    margin: 10px;
+    margin: 40px;
+}
+
+.animes img:hover {
+    opacity: 0.7;
 }
 
